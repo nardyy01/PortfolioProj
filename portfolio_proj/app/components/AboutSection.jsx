@@ -54,11 +54,17 @@ const AboutSection = () => {
         <section className='text-white'>
             <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
                 {/* Image and short description of what I do */}
-                <Image
-                    src="/"
-                    alt='Mood Image'
-                    width={500}
-                    height={500} />
+                <div className='flex justify-center align-middle relative'>
+                    <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-600 to-transparent rounded-full h-80 w-80 blur-xl'></div>
+                    <Image
+                        src="/images/3d_emoticon_meditate.png"
+                        alt='Mood Image'
+                        className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
+                        width={400}
+                        height={400} />
+                </div>
+
+
                 <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                     <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
                     <p>
