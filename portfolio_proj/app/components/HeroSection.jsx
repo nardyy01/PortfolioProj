@@ -3,12 +3,12 @@ import React from 'react'
 import Image from 'next/image'
 
 import { TypeAnimation } from 'react-type-animation';
-import { useAmp } from 'next/amp';
+import { motion } from 'framer-motion'
 
 export const HeroSection = () => {
     return (
         <section>
-            <div className='grid grid-cols-1 lg:grid-cols-12'>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className='grid grid-cols-1 lg:grid-cols-12'>
                 <div className='col-span-7 place-self-center text-center sm:text-left'>
                     <h1 className='text-white mb-4 text-4xl lg:text-6xl font-extrabold'>
                         <span className='text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-yellow-600 to-red-600'>
@@ -33,9 +33,8 @@ export const HeroSection = () => {
                         />
                     </h1>
                     <p className='text-[#ADB7BE] text-lg mb-6 lg:text-xl'>
-                        this is a description.this is a description.this is a description.this is a description.
-                        this is a description.this is a description.this is a description.this is a description.
-                        this is a description.this is a description.this is a description.this is a description.
+                        Software developer with over 4 years in the field, seeking opportunities to broaden my skill set, tackle fresh challenges,
+                        and contribute to the creation of exceptional software.
                     </p>
                     <div>
                         <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 mb-2 bg-gradient-to-br from-orange-600 via-yellow-600 to-red-600 hover:bg-slate-200 text-white'>
@@ -59,7 +58,7 @@ export const HeroSection = () => {
                         />
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }

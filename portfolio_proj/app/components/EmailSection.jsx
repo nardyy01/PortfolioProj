@@ -24,8 +24,7 @@ const EmailSection = () => {
         }
 
         const response = await fetch(endpoint, options)
-        const resData = await response.json()
-        console.log(resData)
+
         if (response.status === 200) {
             console.log('Message Sent.')
             setEmailSubmitted(true);
@@ -39,7 +38,9 @@ const EmailSection = () => {
                     Let's Connect
                 </h5>
                 <p className='text-[#ADB7BE] mb-4 max-w-md'>
-                    Reason to connect
+                    Seeking a proactive developer enthusiastic about acquiring new skills, overcoming challenges, and contributing to software development and improvement.
+                    Don't hesitate to reach out—I'm also available for casual chats or a friendly hello.
+                    Wishing you a fantastic day, and thanks for stopping by!
                 </p>
                 <div className='socials flex flex-row gap-2'>
                     <Link href={'https://www.github.com/nardyy01'} target='_blank'>

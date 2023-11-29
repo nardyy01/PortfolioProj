@@ -1,7 +1,8 @@
 "use client"
-import React, { useTransition, useState } from 'react'
+import React, { useTransition, useState, useRef } from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton'
+import { motion, useInView } from 'framer-motion'
 
 const TAB_DATA = [
     {
@@ -43,6 +44,8 @@ const TAB_DATA = [
 const AboutSection = () => {
     const [tab, setTab] = useState("skills")
     const [isPending, startTransition] = useTransition();
+    const ref = useRef(null)
+    const isInView = useInView(ref, { once: true })
 
     const handleTabChange = (id) => {
         startTransition(() => {
@@ -52,7 +55,13 @@ const AboutSection = () => {
 
     return (
         <section className='text-white'>
-            <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
+            <motion.div
+                ref={ref}
+                initial={{ y: 100, opacity: 0 }}
+                animate={isInView ? { y: 0, opacity: 1 } : { y: 100, opacity: 0 }}
+                transition={{ duration: 1 }}
+                className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'
+            >
                 {/* Image and short description of what I do */}
                 <div className='flex justify-center align-middle relative'>
                     <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-600 to-transparent rounded-full h-80 w-80 blur-xl'></div>
@@ -68,7 +77,10 @@ const AboutSection = () => {
                 <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                     <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
                     <p>
-                        Things about me...
+                        I am a versatile developer specializing in backend, game, and web development, passionate about crafting innovative projects.
+                        Recognized as an adaptable team player, I thrive in collaborative environments and rapidly grasp new concepts.
+                        My proficiency includes working with technologies such as C++, Perl, JavaScript, Node.js, Db2, SQL, C#, Java, among others.
+                        I am dedicated to expanding my skill set and eagerly embrace new tools and technologies to enhance my capabilities.
                     </p>
                     {/* Tab buttons for select information */}
                     <div className='flex flex-row mt-8'>
@@ -80,7 +92,7 @@ const AboutSection = () => {
                         {TAB_DATA.find((tabCurr) => tabCurr.id === tab).content}
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }
