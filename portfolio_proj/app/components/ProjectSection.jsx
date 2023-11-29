@@ -6,49 +6,49 @@ import { motion, useInView } from 'framer-motion'
 
 const projectData = [
     {
-        id: 0,
+        id: 1,
         title: "Open Combat",
         description: "2D Fighting Game",
         image: "/images/open_combat.png",
         tag: ["All", "Web", "Game"],
         gitUrl: "https://github.com/nardyy01/Open_Combat",
-        previewUrl: "/"
-    },
-    {
-        id: 1,
-        title: "Tervive",
-        description: "Terminal Text-Based Rougelike Game Concept",
-        image: "",
-        tag: ["All", "Game"],
-        gitUrl: "https://github.com/nardyy01/Tervive/tree/main",
-        previewUrl: "/"
+        previewUrl: "https://opencombat.netlify.app/"
     },
     {
         id: 2,
+        title: "Tervive",
+        description: "Terminal Text-Based Rougelike Game Concept",
+        image: "/images/Tervive.png",
+        tag: ["All", "Game"],
+        gitUrl: "https://github.com/nardyy01/Tervive/tree/main",
+        previewUrl: "#projects"
+    },
+    {
+        id: 3,
         title: "YouNoob",
         description: "YouTube Clone w/ basic functionality",
         image: "/images/YouNoob.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/nardyy01/YT_Clone",
-        previewUrl: "/"
+        previewUrl: "#projects"
     },
     {
-        id: 3,
+        id: 4,
         title: "RDD",
         description: "Web Portfolio",
         image: "/images/Portfolio_pic.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/nardyy01/PortfolioProj",
-        previewUrl: "/"
+        previewUrl: "#top"
     },
     {
-        id: 4,
+        id: 5,
         title: "Google Page Mimic",
         description: "HTML/CSS Page Mimic",
         image: "/images/google_mimics.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/nardyy01/GooglePage",
-        previewUrl: "/"
+        previewUrl: "https://googlepagemimic.netlify.app/"
     },
 
 ]
@@ -70,8 +70,8 @@ const ProjectSection = () => {
     }
 
     return (
-        <section>
-            <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>
+        <section name='projects'>
+            <h2 className='text-center text-4xl font-bold text-white mt-4 mb-4 '>
                 My Projects
             </h2>
             <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
