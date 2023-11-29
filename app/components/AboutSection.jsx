@@ -26,7 +26,7 @@ const TAB_DATA = [
         id: 'education',
         content: (
             <ul className='list-disc pl-2'>
-                <li>Clayton State University - Bachelor&aposs Degree</li>
+                <li>Clayton State University - Bachelor&apos;s Degree</li>
             </ul>
         )
     },
@@ -84,12 +84,12 @@ const AboutSection = () => {
                     </p>
                     {/* Tab buttons for select information */}
                     <div className='flex flex-row mt-8'>
-                        <TabButton selectTab={() => handleTabChange('skills')} active={tab === 'skills'}>Skills</TabButton>
-                        <TabButton selectTab={() => handleTabChange('education')} active={tab === 'education'}>Education</TabButton>
-                        <TabButton selectTab={() => handleTabChange('certifications')} active={tab === 'certifications'}>Certifications</TabButton>
+                        <TabButton selectTab={() => handleTabChange('skills')} active={tab == 'skills'}>Skills</TabButton>
+                        <TabButton selectTab={() => handleTabChange('education')} active={tab == 'education'}>Education</TabButton>
+                        <TabButton selectTab={() => handleTabChange('certifications')} active={tab == 'certifications'}>Certifications</TabButton>
                     </div>
                     <div className='mt-8 ml-3'>
-                        {TAB_DATA.find((tabCurr) => tabCurr.id === tab).content}
+                        {TAB_DATA.find((tabCurr) => tabCurr.id == tab).content}
                     </div>
                 </div>
             </motion.div>

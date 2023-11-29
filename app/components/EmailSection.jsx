@@ -35,11 +35,11 @@ const EmailSection = () => {
         <section name='contact' className='grid md:grid-cols-2 md:my-12 py-24 gap-4'>
             <div>
                 <h5 className='text-xl font-bold text-white my-2'>
-                    Let&aposs Connect
+                    Let&apos;s Connect
                 </h5>
                 <p className='text-[#ADB7BE] mb-4 max-w-md'>
                     Seeking a proactive developer enthusiastic about acquiring new skills, overcoming challenges, and contributing to software development and improvement.
-                    Don&apost hesitate to reach out—I&aposm also available for casual chats or a friendly hello.
+                    Don&apos;t hesitate to reach out—I&apos;m also available for casual chats or a friendly hello.
                     Wishing you a fantastic day, and thanks for stopping by!
                 </p>
                 <div className='socials flex flex-row gap-2'>
