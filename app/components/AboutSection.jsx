@@ -9,15 +9,19 @@ const TAB_DATA = [
         title: 'Skills',
         id: 'skills',
         content: (
-            <ul className='list-disc pl-2'>
-                <li>C++</li>
-                <li>JavaScript</li>
-                <li>Perl</li>
-                <li>Node.js</li>
-                <li>C#</li>
-                <li>DB2</li>
-                <li>Python</li>
-                <li>React</li>
+            <ul className='flex list-disc pl-2'>
+                <div>
+                    <li>C#</li>
+                    <li>DB2</li>
+                    <li>Python</li>
+                    <li>React</li>
+                </div>
+                <div className='ml-10'>
+                    <li>C++</li>
+                    <li>JavaScript</li>
+                    <li>Perl</li>
+                    <li>Node.js</li>
+                </div>
             </ul>
         )
     },
@@ -54,7 +58,7 @@ const AboutSection = () => {
     }
 
     return (
-        <section name='about' className='text-white'>
+        <section id='about' className='text-white'>
             <motion.div
                 ref={ref}
                 initial={{ y: 100, opacity: 0 }}
