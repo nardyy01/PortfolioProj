@@ -10,15 +10,15 @@ import MenuOverlay from './MenuOverlay'
 const navLinks = [
     {
         title: "About",
-        link: "#about"
+        link: "https://rduffie.netlify.app/#about"
     },
     {
         title: "Projects",
-        link: "#projects"
+        link: "https://rduffie.netlify.app/#projects"
     },
     {
         title: "Contact",
-        link: "#contact"
+        link: "https://rduffie.netlify.app/#contact"
     }
 ]
 
