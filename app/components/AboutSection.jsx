@@ -26,7 +26,7 @@ const TAB_DATA = [
         id: 'education',
         content: (
             <ul className='list-disc pl-2'>
-                <li>Clayton State University - Bachelor's Degree</li>
+                <li>Clayton State University - Bachelor&aposs Degree</li>
             </ul>
         )
     },
