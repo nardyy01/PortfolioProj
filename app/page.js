@@ -18,17 +18,17 @@ export default function Home() {
         </div>
 
         <div className='p-24'></div>
-        <div>
+        <div id='about'>
           <AboutSection />
         </div>
 
         <div className='p-24'></div>
-        <div>
+        <div id='projects'>
           <ProjectSection />
         </div>
 
         <div className='p-24'></div>
-        <div>
+        <div id='contact'>
           <EmailSection />
         </div>
       </div>

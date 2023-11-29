@@ -58,7 +58,7 @@ const AboutSection = () => {
     }
 
     return (
-        <section id='about' className='text-white'>
+        <section className='text-white'>
             <motion.div
                 ref={ref}
                 initial={{ y: 100, opacity: 0 }}

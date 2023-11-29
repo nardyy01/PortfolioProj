@@ -40,7 +40,7 @@ export const HeroSection = () => {
                     </p>
                     <div>
                         <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 mb-2 bg-gradient-to-br from-orange-600 via-yellow-600 to-red-600 hover:bg-slate-200 text-white'>
-                            <Link href={'#contact'}>Hire Me</Link>
+                            <Link href='#contact'>Hire Me</Link>
                         </button>
                         <button className='px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-orange-600 via-yellow-600 to-red-600 hover:bg-slate-800 text-white'>
                             <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>
