@@ -8,7 +8,7 @@ const projectData = [
     {
         id: 1,
         title: "Open Combat",
-        description: "2D Fighting Game",
+        description: "2D Fighting Game - JavaScript/HTML/CSS",
         image: "/images/open_combat.png",
         tag: ["All", "Web", "Game"],
         gitUrl: "https://github.com/nardyy01/Open_Combat",
@@ -17,7 +17,7 @@ const projectData = [
     {
         id: 2,
         title: "Tervive",
-        description: "Terminal Text-Based Rougelike Game Concept",
+        description: "Terminal Text-Based Rougelike Game Concept - Java",
         image: "/images/Tervive.png",
         tag: ["All", "Game"],
         gitUrl: "https://github.com/nardyy01/Tervive/tree/main",
@@ -26,16 +26,16 @@ const projectData = [
     {
         id: 3,
         title: "YouNoob",
-        description: "YouTube Clone w/ basic functionality",
+        description: "YouTube Clone - TypeScript/Next.js/GCS",
         image: "/images/YouNoob.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/nardyy01/YT_Clone",
-        previewUrl: "#projects"
+        previewUrl: "https://yt-web-client-girhz6gtga-uc.a.run.app"
     },
     {
         id: 4,
         title: "RDD",
-        description: "Web Portfolio",
+        description: "Web Portfolio - JavaScript/Node.js",
         image: "/images/Portfolio_pic.png",
         tag: ["All", "Web"],
         gitUrl: "https://github.com/nardyy01/PortfolioProj",
