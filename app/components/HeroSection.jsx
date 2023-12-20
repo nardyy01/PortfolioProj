@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion'
 
-const CV = 'https://drive.google.com/uc?export=download&id=17em8_t-R7DDrkJIYdHrgNQbae98u-XMo'
+const CV = 'https://drive.google.com/uc?export=download&id=1gevnJ5pW3rl9PBnX9Dp7avE1fnpZFXsy'
 export const HeroSection = () => {
     return (
         <section>
